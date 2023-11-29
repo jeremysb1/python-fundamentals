@@ -1,10 +1,13 @@
 def fibonacci(N):
-    result = [0]
-    next_n = 1
-    while next_n <= N:
-        result.append(next_n)
-        next_n = sum(result[-2:])
-    return result
-print(fibonacci(0))
-print(fibonacci(1))
-print(fibonacci(50))
+    yield 0
+    if N == 0:
+        return
+    a = 0
+    b = 1
+    while b <= N:
+        yield b
+        a, b = b, a + b
+
+print(list(fibonacci(0)))
+print(list(fibonacci(1)))
+print(list(fibonacci(50)))
