@@ -31,3 +31,6 @@ class Racecar(Car):
 
 class Citycar(Car):
     engine_cls = ElectricEngine
+
+class F1Car(Racecar):
+    pass
