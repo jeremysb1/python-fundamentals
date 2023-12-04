@@ -30,3 +30,4 @@ class Square(RegularPolygon):
 hexagon = RegularHexagon(10)
 print(hexagon.area())
 print(hexagon.get_geometric_type())
+hexagon.plot(0.8, (75, 77))
