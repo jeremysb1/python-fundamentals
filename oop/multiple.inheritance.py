@@ -26,3 +26,6 @@ class Square(RegularPolygon):
     geometric_type = 'Square'
     def area(self):
         return self.side * self.side
+
+hexagon = RegularHexagon(10)
+print(hexagon.area())
