@@ -6,7 +6,7 @@ class Book:
 
 class Ebook(Book):
     def __init__(self, title, publisher, pages, format_):
-        Book.__init__(self, title, publisher, pages)
+        super().__init__(self, title, publisher, pages)
         self.format_ = format_
 
 ebook = Ebook('Learn Python Programming', 'Packt Publishing', 500, 'PDF')
