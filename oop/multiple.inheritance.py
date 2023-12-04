@@ -8,4 +8,6 @@ class Shape:
 class Plotter:
     def plot(self, ratio, topleft):
         print('Plotting at {}, ration {}.'.format(topleft, ratio))
-        
+
+class Polygon(Shape, Plotter):
+    geometric_type = 'Polygon'
