@@ -26,11 +26,19 @@ class Car:
     def stop(self):
         self.engine.stop()
 
-class Racecar(Car):
+class RaceCar(Car):
     engine_cls = V8Engine
 
-class Citycar(Car):
+class CityCar(Car):
     engine_cls = ElectricEngine
 
-class F1Car(Racecar):
+class F1Car(RaceCar):
     pass
+
+car = Car()
+racecar = RaceCar()
+citycar = CityCar()
+f1car = F1Car()
+cars = [car, racecar, citycar, f1car]
+for car in cars:
+    car.start()
