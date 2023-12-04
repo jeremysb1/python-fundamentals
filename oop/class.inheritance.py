@@ -26,3 +26,6 @@ class Car:
     def stop(self):
         self.engine.stop()
 
+class Racecar(Car):
+    engine_cls = V8Engine
+
