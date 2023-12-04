@@ -11,3 +11,9 @@ class Plotter:
 
 class Polygon(Shape, Plotter):
     geometric_type = 'Polygon'
+
+class RegularPolygon(Polygon):
+    geometric_type = 'Regular Polygon'
+    def __init__(self, side):
+        self.side = side
+    
