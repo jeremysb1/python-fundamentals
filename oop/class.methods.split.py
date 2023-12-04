@@ -22,3 +22,6 @@ class StringUtil:
     @staticmethod
     def get_unique_words(sentence):
         return set(sentence.split())
+
+print(StringUtil.is_palindrome('A nut for a jar of tuna'))
+print(StringUtil.is_palindrome('A nut for a jar of beans'))
