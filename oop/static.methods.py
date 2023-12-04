@@ -14,3 +14,4 @@ class StringUtil:
         return set(sentence.split())
 
 print(StringUtil.is_palindrome('Radar', case_insensitive=False))
+print(StringUtil.get_unique_words('I like to code. I really really enjoy it!'))
