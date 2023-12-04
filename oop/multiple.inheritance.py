@@ -33,3 +33,5 @@ print(hexagon.get_geometric_type())
 hexagon.plot(0.8, (75, 77))
 
 square = Square(12)
+print(square.area())
+print(square.get_geometric_type())
