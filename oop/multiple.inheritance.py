@@ -16,4 +16,8 @@ class RegularPolygon(Polygon):
     geometric_type = 'Regular Polygon'
     def __init__(self, side):
         self.side = side
-    
+
+class RegularHexagon(RegularPolygon):
+    geometric_type = 'RegularHexagon'
+    def area(self):
+        return 1.5 * (3 ** .5 * self.side ** 2)
