@@ -29,3 +29,4 @@ class Square(RegularPolygon):
 
 hexagon = RegularHexagon(10)
 print(hexagon.area())
+print(hexagon.get_geometric_type())
