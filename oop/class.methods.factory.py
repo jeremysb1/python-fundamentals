@@ -13,3 +13,6 @@ class Point:
 
 p = Point.from_tuple((3, 7))
 print(p.x, p.y)
+
+q = Point.from_point(p)
+print(q.x, q.y)
