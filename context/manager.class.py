@@ -12,3 +12,10 @@ class MyContextManager:
         return True
 
 ctx_mgr = MyContextManager()
+print("About to enter 'with' context")
+
+with ctx_mgr as mgr:
+    print("Inside 'with' context")
+    print(id(mgr))
+    raise Exception("Exception inside 'with' context")
+print("After 'with' Context")
