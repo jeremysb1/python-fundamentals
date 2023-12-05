@@ -10,3 +10,5 @@ class MyContextManager:
         print(f"{exc_type=} {exc_val=} {exc_tb=}")
         print("Exiting 'with' context")
         return True
+
+ctx_mgr = MyContextManager()
