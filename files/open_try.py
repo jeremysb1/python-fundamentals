@@ -1,4 +1,6 @@
 fh = open('fear.txt', 'rt')
-for line in fh.readlines():
-    print(line.strip())
-fh.close()
+try:
+    for line in fh.readlines():
+        print(line.strip())
+finally:
+    fh.close()
