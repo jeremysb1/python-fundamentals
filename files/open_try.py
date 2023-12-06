@@ -1,6 +1,6 @@
-fh = open('fear.txt', 'rt')
+fh = open('fear.txt')
 try:
-    for line in fh.readlines():
+    for line in fh:
         print(line.strip())
 finally:
     fh.close()
